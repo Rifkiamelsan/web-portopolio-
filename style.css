@@ -1,0 +1,512 @@
+/* General Styles */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* untuk edit background home*/
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    background: #000000;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+    /* Smooth Scrolling */
+body {
+    scroll-behavior: smooth;
+}
+
+
+
+/* Header untuk di ubah navbar ada tulisan rifki */
+header {
+    background: linear-gradient(135deg, #000000, #000000);
+    color: #fff;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(233, 11, 11, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/* edit tulisan rifki di navbar */
+header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color:#f1c40f
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+/* edit navbar untuk di ubah warna  tulisan home dll */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+}
+/*untuk saat pilih menu home dll */
+nav a:hover {
+    color: #f1c40f;
+    transform: scale(1.1);
+}
+/* Background Image untuk Mobile */
+#home {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Tinggi penuh layar */
+    background-image: url('pp1.jpeg');
+    background-size: cover;
+    background-position: top; /* Memastikan gambar di atas */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Home Section */
+/*#home {
+    background: linear-gradient(135deg, rgba(15, 126, 238, 0.8), rgba(44, 62, 80, 0.8)), url('background-image.jpg') no-repeat center center/cover;
+    padding: 7rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+    text-align: center;
+}
+/* untuk edit tulisan di home */
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 3rem;
+    margin: auto;
+    flex-wrap: wrap;
+}
+/* untuk edit ukuran teks di home */
+.home-text {
+    max-width: 500px;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color:#ecf0f1
+}
+
+.home h2 {
+    font-size: 9rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #f1c40f;
+}
+
+.home p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    color: #ecf0f1;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+/* untuk edit ada lingkaran di gambar ig/tiktok */
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 187, 0);
+    transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+/* Mobile Responsive */
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    #home {
+        background-image: url('pp1.jpeg'); /* Gunakan gambar yang sama atau versi mobile */
+        background-size: cover; /* Menjaga ukuran gambar tetap proporsional */
+        background-position: top; /* Memastikan gambar di atas */
+        background-repeat: no-repeat;
+        background-attachment: scroll; /* Nonaktifkan efek parallax untuk performa */
+        height: auto; /* Sesuaikan tinggi untuk layar kecil */
+        padding: 3rem 0; /* Memberikan padding untuk memberikan ruang pada teks */
+    }
+
+    .home-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-text {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .home h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* About Section */
+#about {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Tinggi penuh layar */
+    background-image: url('pp1.jpeg');
+    background-size: cover;
+    background-position: top; /* Memastikan gambar di atas */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+/* About untuk tulisan portofolio */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin: auto;
+    color: #ffffff;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #34495e;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.125rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.about .btn {
+    display: inline-block;
+    background-color: #f1c40f;
+    color: white;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.about .btn:hover {
+    background-color: #e67e22;
+}
+/* About untuk edit ukuran gambar */
+.about-image {
+    max-width: 350px;
+    text-align: center;
+}
+/* About untuk edit gambar */
+.about-img {
+    width: 380px;
+    height: 380px;
+    border-radius: 10%;
+    border: 4px solid #f1c40f;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.about-img:hover {
+    transform: scale(1.1);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    #about {
+        background-attachment: scroll; /* Nonaktifkan efek parallax untuk performa di perangkat mobile */
+        padding: 3rem 1rem;
+        background-size: cover; /* Menjaga gambar tetap proporsional */
+        background-position: center; /* Posisi gambar lebih terpusat untuk mobile */
+        height: auto; /* Sesuaikan tinggi untuk perangkat mobile */
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about-img {
+        width: 150px;
+        height: 150px;
+    }
+}
+/* Projects Section */
+#projects {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('yy3.jpg') no-repeat center center/cover;
+    padding: 9rem 9rem;
+    text-align: center;
+}
+/*untuk edit tulisan my desain*/
+#projects h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+/*untuk jarak gambar poster projects nya*/
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+/*untuk warna kolom di tulisan desain projects nya*/
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.2);
+}
+/*untuk gambar garis kuning di bawah poster projects nya*/
+.project-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 4px solid #f1c40f;
+    transition: transform 0.3s ease;
+}
+/*untuk edit tulisan Design 1-3 projects nya*/
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-top: 1rem;
+}
+/*untuk edit tulisan poster projects nya*/
+.project-card p {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 1.5rem;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
+/* Lightbox untuk pas di klik gambar nya */
+#lightbox {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+
+
+/* Mobile Responsive/untuk mobile atau hp */
+@media (max-width: 768px) {
+    #projects {
+        padding: 3rem 1rem;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .project-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .project-card p {
+        font-size: 0.9rem;
+    }
+}
+/* Contact untuk edit warna dan ukuran sosial media */
+#contact {
+    padding: 9px 0%;
+    text-align: center;
+    background-image: url(pp3.jpg);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Tinggi penuh layar */
+    background-image: url('pp3.jpg');
+    background-size: cover;
+}
+
+#contact h2 {
+    font-size: 48px;
+    margin-bottom: 80px;
+    color: #ffffff;
+}
+
+#contact .social-links {
+    justify-content: center;
+}
+
+/* untuk tuisan rfki amelsan */
+footer {
+    margin-top: 400px;
+    font-size: 14px;
+    color: #ffffff;
+}
+/* Tombol menu (hamburger) hanya muncul di mobile */
+.menu-icon {
+    display: none; /* Menyembunyikan tombol menu di layar besar */
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 20px; /* Menempatkan tombol di atas */
+    right: 20px; /* Menempatkan tombol di kanan */
+    z-index: 1001; /* Pastikan tombol berada di atas konten lainnya */
+}
+
+
+/* Menu Navigasi */
+.menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Mengubah warna saat hover */
+.menu a:hover {
+    color: #f1c40f;
+    transform: scale(1.1);
+}
+
+/* Responsif Mobile */
+@media (max-width: 768px) {
+    /* Menyembunyikan menu secara default */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .menu {
+        display: none; /* Menu disembunyikan pada perangkat kecil */
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Menyesuaikan posisi menu */
+        right: 0;
+        background-color: #2c3e50;
+        width: 100%;
+        padding: 1rem 0;
+        max-height: 80vh; /* Menyesuaikan tinggi maksimum */
+        overflow-y: auto; /* Menambahkan scroll vertikal */
+    }
+
+    .menu.active {
+        display: flex; /* Menampilkan menu ketika aktif */
+    }
+
+    .menu a {
+        padding: 1rem;
+        text-align: center;
+        border-top: 1px solid #fff;
+        font-size: 1.2rem;
+    }
+
+    /* Menampilkan ikon hamburger */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Membuat menu bisa digulir ke bawah */
+    .menu::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .menu::-webkit-scrollbar-thumb {
+        background: #f1c40f;
+        border-radius: 4px;
+    }
+
+    .menu::-webkit-scrollbar-track {
+        background: #2c3e50;
+    }
+}

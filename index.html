@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rifki Amelsan</h1>
+        <nav>
+            <!-- Ikon Hamburger -->
+            <a href="javascript:void(0);" class="menu-icon" onclick="toggleMenu()">&#9776;</a>
+        
+            <!-- Menu yang akan muncul -->
+            <div id="menu" class="menu">
+                <a href="javascript:void(0);" onclick="showPage('home')">Home</a>
+                <a href="javascript:void(0);" onclick="showPage('about')">Tentang Saya</a>
+                <a href="javascript:void(0);" onclick="showPage('projects')">Design</a>
+                <a href="javascript:void(0);" onclick="showPage('contact')">Sosial Media</a>
+                <!-- Bisa ditambah menu lain di sini -->
+            </div>
+        </nav>
+        
+        
+    </header>
+
+    <!-- Section Home -->
+    <section id="home" class="page">
+        <div class="home-container">
+            <div class="home-text">
+                <h2>Hallo, saya Rifki Amelsan</h2>
+                <p>Saya seorang mahasiswa Teknik Informatika di Universitas Muhammadiyah Bengkulu, dengan minat di dunia desain grafis. Di sini Anda dapat melihat karya saya dan lebih mengenal perjalanan saya.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/rifki_amelsan/" target="_blank">
+                        <img src="instagram-1581266_1280.webp" alt="Instagram" class="social-icon">
+                    </a>
+                    <a href="https://www.tiktok.com/@rifkiamlsn" target="_blank">
+                        <img src="OIP.jpg" alt="TikTok" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section About -->
+    <section id="about" class="page" style="display:none;">
+        <div class="about-container">
+            
+            <div class="about-text">
+                <h2>Selamat datang di Portofolio Saya!</h2>
+                <p>Halo, saya Rifki Amelsan, seorang mahasiswa di Teknik Informatika Universitas Muhammadiyah Bengkulu. Saya memiliki minat yang besar dalam desain grafis, khususnya dalam pembuatan poster dan visual menarik. Melalui portofolio ini, Anda bisa melihat beberapa karya saya dan lebih mengenal perjalanan saya di dunia desain.</p>
+                <p>Saya terus belajar dan berkembang dalam menciptakan desain yang kreatif dan inovatif. Jika Anda tertarik untuk bekerja sama atau ingin bertanya lebih lanjut, jangan ragu untuk menghubungi saya!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projects -->
+    <section id="projects" class="page" style="display:none;">
+        <h2>My Design</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="poster1.jpg" alt="Project 1" class="project-image" onclick="openLightbox(0)">
+            </div>
+            <div class="project-card">
+                <img src="poster2.jpg" alt="Project 2" class="project-image" onclick="openLightbox(1)">
+            </div>
+            <div class="project-card">
+                <img src="poster3.jpg" alt="Project 3" class="project-image" onclick="openLightbox(2)">
+            </div>
+        </div>
+        
+        <!-- Lightbox -->
+        <div id="lightbox" onclick="closeLightbox()">
+            <span class="prev" onclick="navigateLightbox(-1); event.stopPropagation();">&#10094;</span>
+            <img id="lightbox-img" src="" alt="Lightbox Image">
+            <span class="next" onclick="navigateLightbox(1); event.stopPropagation();">&#10095;</span>
+        </div>        
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="page" style="display:none;">
+        <h2>Sosial Media</h2>
+        <div class="social-links">
+            <a href="https://www.instagram.com/rifki_amelsan/" target="_blank">
+                <img src="instagram-1581266_1280.webp" alt="Instagram" style="width: 50px; height: 50px;">
+            </a>
+            <a href="https://www.tiktok.com/@rifkiamlsn" target="_blank">
+                <img src="OIP.jpg" alt="TikTok" style="width: 50px; height: 50px;">
+            </a>
+        </div>
+        <footer>
+            <p>© 2024 [Rifki Amelsan]</p>
+        </footer>
+    </section>
+
+    <div id="lightbox" style="display: none;" onclick="closeLightbox()">
+        <img src="" alt="Gambar Lightbox" id="lightbox-img" />
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
